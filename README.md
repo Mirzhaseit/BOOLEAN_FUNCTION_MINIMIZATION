@@ -37,7 +37,11 @@ Hardware – PCs, Cyclone II , USB flasher
 
 Developed by: RegisterNumber:*/212224230159
 
-module booleanexpression ( input A, B, C, D, output F ); wire nB, nD, term1, term2, term3; // NOT gates not (nB, B); not (nD, D); // AND terms and (term1, nB, nD); // B'D' and (term2, A, C);
+module booleanexpression ( input A, B, C, D, output F );
+wire nB, nD, term1, term2, term3; 
+// NOT gates not (nB, B); not (nD, D);
+// AND terms and (term1, nB, nD); 
+// B'D' and (term2, A, C);
 // AC and (term3, B, D);
 // BD // OR the terms or (F, term1, term2, term3);
 
